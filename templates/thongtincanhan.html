@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/thongtincanhan.css')}}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="menu">
+        <div class="admin"><a href="/action">
+            <i class="fas fa-radiation-alt"></i>
+            <b>Action</b></a></div>
+        <div class="admin"><a href="/sensordata">
+            <i class="fas fa-list-ul"></i>
+            <b>Sensordata</b></a></div>
+        <div class="admin"> <a href="/thongtincanhan">
+            <i class="fas fa-user"></i> 
+            <b>Profile</b></a> </div>
+        <div class="admin"><a href="/">
+            <i class="fas fa-tachometer-alt"></i>
+            <b>Dashbroad</b></a></div>
+    </div>
+    <div class="content">
+        <h1>Thông tin cá nhân </h1>
+        <div class="hinhanh">
+            <img src="{{url_for('static', filename='img/hinhanhadmin.jpg')}}" alt="admin">
+        </div>
+
+        <div class="thongtin">
+            <label for=""><b>Họ và tên: </b></label>
+            <span>Nguyễn Thị Loan</span><br>
+            <label for=""><b>Mã sinh viên: </b></label>
+            <span>B20DCCN401</span><br>
+            <label for=""><b>Lớp: </b></label>
+            <span>HTTT02</span><br>
+            <label for=""><b>Môn học: </b></label>
+            <span>Iot và ứng dụng </span><br>
+            <label for=""><b>Nhóm: </b></label>
+            <span>07</span><br>
+            
+            <label for=""><b></b></label>
+        </div>
+    </div>
+</body>
+</html>

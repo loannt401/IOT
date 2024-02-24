@@ -1,0 +1,357 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(196, 52, 52);
+    margin-bottom: 10px;
+}
+
+.header .header_title {
+    float: right;
+    margin-right: 3vw;
+}
+
+.header .header_title a {
+    font-size: 20px;
+    line-height: 50px;
+    color: white;
+    text-decoration: none;
+}
+
+.content {
+    /* border: 1px solid black; */
+    width: 90%;
+    margin: auto;
+    overflow: auto;
+    margin-top: 60px;
+    padding: 15px;
+    box-shadow: 0 1px 2px 0 rgb(60 64 67/ 10%), 0 2px 6px 2px rgb(60 64 67/ 15%);
+}
+
+.content .infor{
+    /* border: 1px solid black; */
+    height: 170px;
+    position: static;
+}
+
+.content .infor .infor_sensor {
+    width: 295px;
+    height: 150px;
+    /* border: 1px solid darkgray; */
+    float: left;
+    margin-left: 25px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border-style: outset;
+    background-color: white;
+    
+}
+
+.content .infor .infor_sensor .infor_sensor_title {
+    font-family: sans-serif;
+    font-size: 25px;
+    margin: 10px;
+    /* border: 1px solid black; */
+}
+
+.content .infor .infor_sensor .infor_sensor_result {
+    text-align: center;
+    font-size: 70px;
+    /* border: 1px solid black; */
+}
+
+.content .infor .color1 {
+    background-color: white;
+}
+
+.content .infor .color1.active1 {
+    background-image: linear-gradient(to right, chocolate , white);
+}
+
+.content .infor .color1.active2 {
+    background-image: linear-gradient(to right, red , white);
+}
+
+.content .infor .color1.active3 {
+    background-image: linear-gradient(to right, rgb(214, 10, 10) , rgb(251, 155, 86));
+}
+
+.content .infor .color2 {
+    background-color: white;
+}
+
+.content .infor .color2.active1 {
+    background-image: linear-gradient(to right, rgb(132, 232, 244) , white);
+}
+
+.content .infor .color2.active2 {
+    background-image: linear-gradient(to right, rgb(61, 129, 197) , white);
+}
+
+.content .infor .color2.active3 {
+    background-image: linear-gradient(to right, blue , rgb(132, 232, 244));
+}
+
+.content .infor .color3 {
+    background-color: white;
+}
+
+.content .infor .color3.active1 {
+    background-image: linear-gradient(to right, rgb(250, 250, 155) , white);
+}
+
+.content .infor .color3.active2 {
+    background-image: linear-gradient(to right, yellow , white);
+}
+
+.content .infor .color3.active3 {
+    background-image: linear-gradient(to right, rgb(199, 172, 0) , rgb(250, 250, 155));
+}
+
+.content .infor .color4 {
+    background-color: white;
+}
+
+.content .infor .color4.active1 {
+    background-image: linear-gradient(to right, rgb(185, 185, 185) , white);
+}
+
+.content .infor .color4.active2 {
+    background-image: linear-gradient(to right, rgb(99, 98, 98) , white);
+}
+
+.content .infor .color4.active3 {
+    background-image: linear-gradient(to right, rgb(73, 71, 71) , rgb(157, 158, 156));
+}
+
+.content .chart {
+    border: 1px solid black;
+    width: 68%;
+    min-height: 500px;
+    margin: auto;
+    float: left;
+}
+
+.content .switch {
+    /* border: 1px solid black; */
+    width: 29%;
+    min-height: 500px;
+    float: right;
+}
+
+.content .switch .switch_device {
+    /* border: 1px solid black; */
+    height: 180px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 1px 2px 0 rgb(60 64 67/ 10%), 0 2px 6px 2px rgb(60 64 67/ 15%);
+}
+
+.content .switch .switch_device .switch_device_title {
+    /* border: 1px solid black; */
+    width: 29%;
+    height: 100%;
+    font-family: sans-serif;
+    font-size: 25px;
+    margin-top: 10px;
+    float: left;
+}
+
+.content .switch .switch_device .switch_device_result {
+    /* border: 1px solid black; */
+    width: 70%;
+    height: 100%;
+    float: right;
+}
+
+.content .switch .switch_device .switch_device_img {
+    /* border: 1px solid black; */
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    position: relative;
+} 
+
+.content .switch .switch_device .switch_device_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.switch_device_img_lamp1_on {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.switch_device_img_lamp1_off {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+.switch_device_img_lamp2_on {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.switch_device_img_lamp2_off {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+.switch_device_img_fan_on {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.switch_device_img_fan_off {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+.content .switch .switch_device .switch_device_transition {
+    /* border: 1px solid black; */
+    height: 60px;
+    width: 150px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.switch_device_transition_button {
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.switch_device_transition_button_1 {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background: #ccc;
+    display: block;
+    border-radius: 30px;
+    padding: 3px;
+    position: relative;
+}
+
+.switch_device_transition_button_1.active {
+    background-color: #66bb6a;
+}
+
+.switch_device_transition_button_1_1 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    line-height: 60px;
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: gray;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    transition: 1s;
+}
+
+.switch_device_transition_button_1.active .switch_device_transition_button_1_1 {
+    transform: translateX(90px);
+    color: black;
+}
+
+.switch_device_transition_button_2 {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background: #ccc;
+    display: block;
+    border-radius: 30px;
+    padding: 3px;
+    position: relative;
+}
+
+.switch_device_transition_button_2.active {
+    background-color: #66bb6a;
+}
+
+.switch_device_transition_button_2_2 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    line-height: 60px;
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: gray;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    transition: 1s;
+}
+
+.switch_device_transition_button_2.active .switch_device_transition_button_2_2 {
+    transform: translateX(90px);
+    color: black;
+}
+
+.switch_device_transition_button_3 {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background: #ccc;
+    display: block;
+    border-radius: 30px;
+    padding: 3px;
+    position: relative;
+}
+
+.switch_device_transition_button_3.active {
+    background-color: #66bb6a;
+}
+
+.switch_device_transition_button_3_3 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    line-height: 60px;
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: gray;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    transition: 1s;
+}
+
+.switch_device_transition_button_3.active .switch_device_transition_button_3_3 {
+    transform: translateX(90px);
+    color: black;
+}
+
+
+
+.clr {
+    clear: both;
+}
+

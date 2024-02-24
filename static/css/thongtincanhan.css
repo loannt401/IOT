@@ -1,0 +1,59 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu {
+    height: 50px;
+    width: 100%;
+    background-color: rgb(196, 52, 52);
+}
+
+.menu .admin {
+    float: right;
+    margin-right: 3vw;
+}
+
+.menu .admin a {
+    font-size: 20px;
+    line-height: 50px;
+    color: white;
+    text-decoration: none;
+} 
+
+.content {
+    width: 70%;
+    margin: auto;
+    overflow: auto;
+    background-color: rgb(255, 221, 221);
+    height: 90vh;
+}
+
+.content h1 {
+    text-align: center;
+}
+
+.content .hinhanh {
+    width: 210px;
+    height: 280px;
+    border: 1px solid black;
+    margin: 50px;
+    margin-left: 200px;
+    float: left;
+}
+
+.content .hinhanh img {
+    width: 100%;
+    height: 100%;
+}
+
+.content .thongtin {
+    width: 500px;
+    overflow: auto;
+    float: right;
+    margin: 20px;
+    margin-top: 50px;
+    font-size: 20px;
+    line-height: 40px;
+    
+}

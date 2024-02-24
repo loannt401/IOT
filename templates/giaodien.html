@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/giaodien.css')}}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header_title">
+            <a href="/action">
+                <i class="fas fa-radiation-alt"></i>
+                <b>Action</b>
+            </a>
+        </div>
+        <div class="header_title">
+            <a href="/sensordata">
+                <i class="fas fa-list-ul"></i>
+                <b>Sensordata</b>
+            </a>
+        </div>
+        <div class="header_title">
+            <a href="/thongtincanhan">
+                <i class="fas fa-user"></i> 
+                <b>Profile</b>
+            </a>
+        </div>
+        <div class="header_title">
+            <a href="/">
+                <i class="fas fa-tachometer-alt"></i>
+                <b>Dashbroad</b>
+            </a>
+        </div>
+
+    </div>
+    <div class="content">
+        <div class="infor">
+            <div class="infor_sensor color4">
+                <div class="infor_sensor_title"><b>Độ bụi: </b></div>
+                <div class="infor_sensor_result"><span id="db">_</span> %</div>
+            </div>
+            <div class="infor_sensor color1">
+                <div class="infor_sensor_title"><b>Nhiệt độ: </b></div>
+                <div class="infor_sensor_result"><span id="nd">_</span> °C</div>
+            </div>
+            <div class="infor_sensor color2">
+                <div class="infor_sensor_title"><b>Độ ẩm: </b></div>
+                <div class="infor_sensor_result"><span id="da">_</span> %</div>
+            </div>
+            <div class="infor_sensor color3">
+                <div class="infor_sensor_title"><b>Độ sáng: </b></div>
+                <div class="infor_sensor_result"><span id="ds">_</span> lux</div>
+            </div>
+        </div>
+        <div class="clr"></div>
+        <div class="chart">
+            <canvas id="comboChart" width="850" height="450"></canvas>
+        </div>
+        <div class="switch">
+            <div class="switch_device">
+                <div class="switch_device_title">
+                    <b>Đèn 1:</b>
+                </div>
+                <div class="switch_device_result">
+                    <div class="switch_device_img">
+                        <div class="switch_device_img_lamp1_on">
+                            <img src="{{url_for('static', filename='img/denbat.jpg')}}" alt="lamp1">
+                        </div>
+                        <div class="switch_device_img_lamp1_off">
+                            <img src="{{url_for('static', filename='img/dentat.jpg')}}" alt="lamp1">
+                        </div>
+                    </div>
+                    <div class="switch_device_transition">
+                        <div class="switch_device_transition_button">
+                            <div onclick="lamp1()" class="switch_device_transition_button_1">
+                                <div class="switch_device_transition_button_1_1">
+                                    <span id="lamp1">OFF</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="switch_device">
+                <div class="switch_device_title">
+                    <b>Đèn 2:</b>
+                </div>
+                <div class="switch_device_result">
+                    <div class="switch_device_img">
+                        <div class="switch_device_img_lamp2_on">
+                            <img src="{{url_for('static', filename='img/denbat.jpg')}}" alt="lamp2">
+                        </div>
+                        <div class="switch_device_img_lamp2_off">
+                            <img src="{{url_for('static', filename='img/dentat.jpg')}}" alt="lamp2">
+                        </div>
+                    </div>
+                    <div class="switch_device_transition">
+                        <div class="switch_device_transition_button">
+                            <div onclick="lamp2()" class="switch_device_transition_button_2">
+                                <div class="switch_device_transition_button_2_2">
+                                    <span id="lamp2">OFF</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="switch_device">
+                <div class="switch_device_title">
+                    <b>Quạt:</b>
+                </div>
+                <div class="switch_device_result">
+                    <div class="switch_device_img">
+                        <div class="switch_device_img_fan_on">
+                            <img src="{{url_for('static', filename='img/quatbat.jpg')}}" alt="fan">
+                        </div>
+                        <div class="switch_device_img_fan_off">
+                            <img src="{{url_for('static', filename='img/quattat.jpg')}}" alt="fan">
+                        </div>
+                    </div>
+                    <div class="switch_device_transition">
+                        <div class="switch_device_transition_button">
+                            <div onclick="fan()" class="switch_device_transition_button_3">
+                                <div class="switch_device_transition_button_3_3">
+                                    <span id="fan">OFF</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script src="{{url_for('static', filename='javascript/giaodien.js')}}"></script>
+</body>
+</html>

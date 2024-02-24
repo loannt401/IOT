@@ -1,0 +1,60 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    overflow: auto;
+}
+
+.menu {
+    height: 50px;
+    width: 100%;
+    background-color: rgb(196, 52, 52);
+}
+
+.menu .admin {
+    float: right;
+    margin-right: 3vw;
+}
+
+.menu .admin a {
+    font-size: 20px;
+    line-height: 50px;
+    color: white;
+    text-decoration: none;
+} 
+
+.content {
+    width: 70%;
+    height: auto;
+    margin: auto;
+    padding-bottom: 100px;
+    overflow: auto;
+    background-color: rgb(255, 221, 221);
+    min-height: 90vh;
+}
+
+.content h1 {
+    text-align: center;
+}
+
+.content table {
+    margin: auto;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.content table, th, td {
+    border: 1px solid black;
+    width: 1000px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.content table th {
+    background-color: rgb(247, 187, 187);
+}
+
+#pagination {
+    text-align: center;
+    margin: 30px;
+}
